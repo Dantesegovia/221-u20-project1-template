@@ -5,7 +5,7 @@ document.getElementById('portal_button').addEventListener('click', event => {
 let feedItem = {
     Title: 'News from Marist',
     Body: 'Get the latest Marist news here',
-    linkUrl: 'hhtps://www.maristcircle.com', 
+    linkUrl: 'https://www.maristcircle.com', 
     imageUrl: '/images/news_pic.jpg'
 }
 
@@ -31,7 +31,10 @@ window.addEventListener("load", () => {
 }})
 
 function displayFeed(currentStories){
-    let feed = document.getElementById
-
+    let feed = document.getElementById('newsfeed');
+    feed.innerHTML += "<span><img class='myImage' src ='"+ currentStories.imageUrl +"'>" +"</span";
+    feed.innerHTML += "<span><h2><a href'" + currentStories.imageUrl +"'>" + currentStories.Title + "</a>"
+    feed.innerHTML += "<p>" + currentStories.Body + "</p>";
+    feed.innerHTML += "<hr /"
 
 }
